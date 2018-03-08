@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <title>SVG Clip-Path Color Reveal</title>
+
+      <!-- Style CSS -->
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+      <div class="container">
+        <div class="main">
+          <div class='items'>
+            <div class='item'>
+              <div class="item-inner">
+                <svg preserveAspectRatio='xMidYMid meet'>
+                  <defs>
+                    <clipPath id='circle-clip'>
+                      <circle cx='0' cy='0' r='100px'></circle>
+                    </clipPath>
+                  </defs>
+                  <image class="image-overlay" height='100%' preserveAspectRatio='xMinYMin meet' width='100%' xlink:href='http://www.bridgetcreed.com/img/img-profile_bw-original.jpg'></image>
+                  <g clip-path='url(#circle-clip)'>
+                    <image height='100%' preserveAspectRatio='xMinYMin meet' width='100%' xlink:href='http://www.bridgetcreed.com/img/img-profile.jpg'></image>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script src="js/scripts.js"></script>
+    </body>
+</html>
