@@ -1,9 +1,7 @@
 * {
   margin: 0;
-  clear: both;
-  height: auto;
-  overflow: scroll;
-  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -62,7 +60,6 @@ image {
 
 svg {
   width: 100%;
-  height: 100%;
 }
 
 .item-inner {
