@@ -1,4 +1,4 @@
-* {
+body {
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -27,9 +27,10 @@
 
 svg {
   width: 100%;
+  height: 100%;
 }
 
-circle {
+circle, rect {
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   -webkit-transform: scale(0);
@@ -63,12 +64,11 @@ image {
 
 .item {
   display: block;
-  overflow: hidden;
   width: 100%;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  cursor: pointer;
+  cursor: cursor;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
@@ -82,7 +82,7 @@ svg {
   display: block;
 }
 
-.item:hover circle, .item:hover image {
+.item:hover circle, .item:hover image, .item:hover rect {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
