@@ -53,7 +53,7 @@ image {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  cursor: pointer;
+  cursor: cursor;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
@@ -77,7 +77,7 @@ image {
   width: 100%;
 }
 
-.item:hover circle, .item:hover image {
+.overlay:hover circle, .overlay:hover image {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
