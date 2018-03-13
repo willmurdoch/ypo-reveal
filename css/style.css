@@ -8,6 +8,7 @@ body {
   overflow-y: scroll;
   overflow-scrolling: touch;
   -webkit-overflow-scrolling: touch;
+  height: 100%;
 }
 
 .container {
@@ -71,6 +72,10 @@ image {
 .overlay {
   width: 100%;
   max-width: 86.9%;
+}
+
+.overlay svg {
+  width: 100%;
 }
 
 .scroll-rail {
