@@ -58,13 +58,23 @@ image {
   transform: translateZ(0);
 }
 
-svg {
-  width: 100%;
+.item-inner {
+  display: inline;
+  float: left;
 }
 
-.item-inner {
+.overlay {
   width: 100%;
-  display: block;
+  max-width: 86.9%;
+}
+
+.scroll-rail {
+  width: 100%;
+  max-width: 13.1%;
+}
+
+.scroll-rail img {
+  width: 100%;
 }
 
 .item:hover circle, .item:hover image {
