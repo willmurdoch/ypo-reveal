@@ -1,5 +1,5 @@
 var items = []
-  , point = document.querySelector('svg').createSVGPoint();
+  , point = document.getElementById('topSecret').createSVGPoint();
 
 function getCoordinates(e, svg) {
   point.x = e.clientX;
@@ -34,7 +34,7 @@ Item.prototype = {
   }
 };
 
-[].slice.call(document.querySelectorAll('.item'), 0).forEach(function (item, index) {
+[].slice.call(document.querySelectorAll('.overlay'), 0).forEach(function (item, index) {
   items.push(new Item({
     el: item,
     svg: item.querySelector('svg'),
