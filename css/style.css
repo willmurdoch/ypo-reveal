@@ -85,11 +85,6 @@ image {
 
 .scroll-rail svg {
   width: 100%;
-  pointer-events: all;
-}
-
-.scroll-rail svg image {
-  pointer-events: all;
 }
 
 .overlay:hover circle, .overlay:hover image {
